@@ -30,7 +30,8 @@ namespace RTLTMPro
             FastStringBuilder output,
             bool farsi = true,
             bool fixTextTags = true,
-            bool preserveNumbers = false)
+            bool preserveNumbers = false,
+            bool preserveShadda = false)
         {
             inputBuilder.SetValue(input);
             TashkeelFixer.RemoveTashkeel(inputBuilder);
@@ -38,8 +39,11 @@ namespace RTLTMPro
             GlyphFixer.Fix(inputBuilder, glyphFixerOutput, preserveNumbers, farsi, fixTextTags);
             //Restore tashkeel to their places.
             TashkeelFixer.RestoreTashkeel(glyphFixerOutput);
-            
-            TashkeelFixer.FixShaddaCombinations(glyphFixerOutput);
+
+            if (!preserveShadda)
+            {
+                TashkeelFixer.FixShaddaCombinations(glyphFixerOutput);
+            }
             // Fix flow of the text and put the result in FinalLetters field
             LigatureFixer.Fix(glyphFixerOutput, output, farsi, fixTextTags, preserveNumbers);
             if (fixTextTags)

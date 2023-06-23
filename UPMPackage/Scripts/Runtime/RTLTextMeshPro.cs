@@ -43,6 +43,19 @@ namespace RTLTMPro
             }
         }
 
+        public bool PreserveShadda
+        {
+            get { return preserveShadda; }
+            set
+            {
+                if (preserveShadda == value)
+                    return;
+
+                preserveShadda = value;
+                havePropertiesChanged = true;
+            }
+        }
+
         public bool Farsi
         {
             get { return farsi; }
@@ -83,6 +96,8 @@ namespace RTLTMPro
         }
 
         [SerializeField] protected bool preserveNumbers;
+
+        [SerializeField] protected bool preserveShadda;
 
         [SerializeField] protected bool farsi = true;
 
@@ -126,7 +141,7 @@ namespace RTLTMPro
                 return input;
 
             finalText.Clear();
-            RTLSupport.FixRTL(input, finalText, farsi, fixTags, preserveNumbers);
+            RTLSupport.FixRTL(input, finalText, farsi, fixTags, preserveNumbers, preserveShadda);
             finalText.Reverse();
             return finalText.ToString();
         }

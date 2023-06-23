@@ -1,8 +1,12 @@
 # Changelog
-These are the release notes for the RTLTMPro UPM package. 
+These are the release notes for the RTLTMPro fork by Meem Ain. 
 
-The github repository is: https://github.com/hk1ll3r/RTLTMPro
-The parent repository is: https://github.com/mnarimani/RTLTMPro
+The github repository is: https://github.com/MeemAinEdu/RTLTMPro
+The parent repository is: https://github.com/hk1ll3r/RTLTMPro
+The original repository is: https://github.com/mnarimani/RTLTMPro
+
+# v3.4.5-edit.1 (2023/06/23)
+- Option to preserve Shadda
 
 # v3.4.3 (2022/03/14)
 - General bug fixes and improvements.

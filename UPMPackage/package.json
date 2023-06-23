@@ -1,7 +1,7 @@
 {
   "name": "com.nosuchstudio.rtltmpro",
   "displayName": "RTL Text Mesh Pro",
-  "version": "3.4.5",
+  "version": "3.4.5-edit.1",
   "unity": "2019.1",
   "description": "This package adds Right-to-left language support to TextMeshPro Unity package. Supports Persian, Arabic and Hebrew.",
   "keywords": [
@@ -27,16 +27,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hk1ll3r/RTLTMPro.git",
+    "url": "https://github.com/MeemAinEdu/RTLTMPro.git",
     "directory": "UPMPackage"
   },
   "bugs": {
-    "url": "https://github.com/hk1ll3r/RTLTMPro/issues"
+    "url": "https://github.com/MeemAinEdu/RTLTMPro/issues"
   },
-  "homepage": "https://github.com/hk1ll3r/RTLTMPro#readme",
+  "homepage": "https://github.com/MeemAinEdu/RTLTMPro#readme",
   "category": "Utility",
-  "dependencies": {},
-  "publishConfig": {
-    "registry": "https://package.openupm.com"
-  }
+  "dependencies": {}
 }
